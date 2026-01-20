@@ -1,0 +1,24 @@
+# Environment and secrets
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Data files (may contain sensitive trading data)
+data/
+*.db
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/
