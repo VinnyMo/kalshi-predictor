@@ -328,7 +328,7 @@ def main():
             console.print(f"  [red]- {error}[/red]")
         console.print("\n[yellow]Please configure your .env file. See .env.example for template.[/yellow]")
         console.print("[yellow]1. Copy .env.example to .env[/yellow]")
-        console.print("[yellow]2. Set your API key ID and private key path[/yellow]")
+        console.print("[yellow]2. Set your API key ID and private key PEM contents (not a file path)[/yellow]")
         sys.exit(1)
 
     console.clear()

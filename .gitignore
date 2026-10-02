@@ -1,24 +1,37 @@
-# Environment and secrets
+# Local secrets and runtime data
 .env
+.env.*
+!.env.example
+!.env.*.example
 *.pem
 *.key
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
+*.p12
+*.pfx
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+logs/
+uploads/
+vpn-uploads/
+receipts/
+backups/
+*.bak
+node_modules/
 venv/
 .venv/
-env/
-
-# Data files (may contain sensitive trading data)
-data/
-*.db
-*.sqlite
-
-# IDE
-.vscode/
-.idea/
-
-# Claude
+.mcp-venv/
+__pycache__/
+*.pyc
+.cache/
+coverage/
+dist/
+build/
 .claude/
+.codex
+.antigravitycli/
+.DS_Store
+data/
