@@ -19,7 +19,8 @@ class Config:
         self.api_key_id = os.getenv("KALSHI_API_KEY_ID", "")
         self.private_key_raw = os.getenv("KALSHI_PRIVATE_KEY", "")
         self.environment = os.getenv("KALSHI_ENVIRONMENT", "demo").lower()
-        self.starting_balance = float(os.getenv("STARTING_BALANCE", "100"))
+        # Treat blank values from a copied .env as the documented default.
+        self.starting_balance = float(os.getenv("STARTING_BALANCE", "").strip() or "100")
 
         # Derived settings
         self.base_url = self.DEMO_BASE_URL if self.environment == "demo" else self.PROD_BASE_URL
